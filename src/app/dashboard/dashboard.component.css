@@ -1,0 +1,26 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+}
+.sidebar {
+    width: calc(100% - 80%);
+    background-color: #6610f2;
+    color: #fff;
+    height: 800px;
+}
+.navbar {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.user {
+    display: flex;
+}
