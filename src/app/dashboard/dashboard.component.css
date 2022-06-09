@@ -14,7 +14,7 @@ body{
 }
 
 .sidebar {
-    width: calc(100% - 70%);
+    width: calc(100% - 75%);
     color: #fff;
     height: 800px;
     padding-left: 50px;
@@ -22,22 +22,48 @@ body{
 }
 
 .sidebar-logo {
-    width: 20%;
-    top: 8px;
+    width: 22%;
+    top: 0px;
     left: 8px;
     height: 100px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     position: fixed;
     background-color: #40189d;
 }
 .sidebar-logo img {
     margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 .sidebar-options {
     margin-top: 100px
+}
+
+.sidebar-options ul {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.sidebar-options ul li {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    color: hsla(0,0%,100%,.7);
+    transition: all 0.3s;
+}
+
+.sidebar-options ul li:hover {
+    color: #fff;
+}
+
+.sidebar-options ul li span i {
+    padding-right: 25px;
 }
 
 .main-navbar {
@@ -49,13 +75,14 @@ body{
 }
 
 .navbar {
-    width: 100%;
+    width: 75%;
     height: 80px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
     border-top-left-radius: 50px;
     background-color: #f2f2f2;
+    position: fixed;
 }
 
 .menu {
@@ -64,6 +91,7 @@ body{
 
 .menu i {
     font-size: 30px;
+    padding-left: 30px;
 }
 
 .navbar-user {
@@ -89,8 +117,8 @@ body{
     position: absolute;
     color: #40189d;
     font-size: 20px;
-    right: 20px;
-    top: 50%
+    right: 30px;
+    top: 30%
 }
 
 .user-main {
@@ -115,8 +143,53 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .user img{
     border-radius: 50%
+}
+
+.user-logout {
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}
+
+.user-logout ul {
+    list-style: none;
+    color: #8492AF;
+    font-size: 14px;
+    box-shadow: 0 5px 10px 0 #2980b92e;
+}
+
+.user-logout ul li {
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.user-logout ul li:hover{
+    color: #40189d;
+}
+
+.user-logout i {
+    width:fit-content;
+    height: fit-content;
+    font-size: 14px;
+    padding-right: 20px;
+    background: none;
+}
+
+.head {
+    transition: all 0.5s ease-in;
+}
+
+
+.drop-list ul li {
+    padding-left: 50px;
+    font-size: 16px;
 }
